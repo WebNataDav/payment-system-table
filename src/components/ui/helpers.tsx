@@ -108,7 +108,7 @@ export const generateColumns = (displayMonths: string[]) => {
           </div>
         );
       },      
-      size: 200
+      size: 150
     },
     {
       header: '',
@@ -129,7 +129,7 @@ export const generateColumns = (displayMonths: string[]) => {
           </div>
         );
       },
-      size: 200
+      size: 150
     },
     ...displayMonths.map(month => ({
       header: () => (
@@ -149,10 +149,10 @@ export const generateColumns = (displayMonths: string[]) => {
           <div className="flex flex-col justify-center h-full border-r border-[#D6E3EC] px-4 py-3">
             <div className="flex justify-between">
               <span className="text-sm text-[#A6B1B9]">
-                {value?.plan ? `$${value.plan.toLocaleString()}` : 'No data'}
+                {value?.plan ? `$${value.plan.toFixed(2).toLocaleString()}` : 'No data'}
               </span>
               <span className="text-sm text-[#A6B1B9]">
-                {value?.fact ? `$${value.fact.toLocaleString()}` : 'No data'}
+                {value?.fact ? `$${value.fact.toFixed(2).toLocaleString()}` : 'No data'}
               </span>
             </div>
           </div>
