@@ -1,4 +1,4 @@
-import { handleMonthNavigation } from '@/helpers/index';
+import { handleMonthNavigation } from '@/helpers';
 
 interface TableControlsProps {
   currentStartMonth: number;

@@ -1,8 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useReactTable, getCoreRowModel, flexRender } from '@tanstack/react-table';
-import { FinancialData } from "@/types/index";
-import { monthNames, monthsToShow } from '@/constants/index';
-import { getDisplayMonths } from '@/helpers/index';
+import { FinancialData } from "@/types";
+import { getDisplayMonths } from '@/helpers';
 import { generateTableData, generateColumns } from './helpers';
 import { TableControls } from './TableControls';
 
@@ -10,7 +9,7 @@ export function Table({ data }: { data: FinancialData }) {
   const [currentStartMonth, setCurrentStartMonth] = useState(new Date().getMonth());
   const displayMonths = useMemo(() => getDisplayMonths(currentStartMonth), [currentStartMonth]);
   
-  const columns = useMemo(() => generateColumns(displayMonths, data), [displayMonths, data]);
+  const columns = useMemo(() => generateColumns(displayMonths), [displayMonths]);
   const tableData = useMemo(() => generateTableData(data, displayMonths), [displayMonths, data]);
 
   const table = useReactTable({

@@ -1,4 +1,4 @@
-import { monthNames, monthsToShow } from '@/constants/index';
+import { monthNames, monthsToShow } from '@/constants';
 
 export const handleMonthNavigation = (
   currentStartMonth: number,

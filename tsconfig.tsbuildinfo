@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/ui/error.tsx","./src/components/ui/loading.tsx","./src/components/ui/table.tsx","./src/components/ui/tablecontrols.tsx","./src/components/ui/helpers.tsx","./src/constants/index.ts","./src/helpers/index.ts","./src/hooks/usefinances.ts","./src/types/index.tsx"],"errors":true,"version":"5.8.3"}

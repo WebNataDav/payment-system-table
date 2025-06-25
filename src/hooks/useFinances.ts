@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {API_URL} from '../constants';
-import { FinancialData } from "@/types/index";
+import { FinancialData } from "@/types";
 
 export const useFinances = () => {
   const [data, setData] = useState<FinancialData | null>(null);
