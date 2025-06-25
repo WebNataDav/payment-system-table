@@ -17,7 +17,7 @@ export const useFinances = () => {
         setData(result.data);
         setLoading(false);
       } catch(err) {
-        setError(err);
+        setError(err instanceof Error ? err.message : 'An unknown error occurred');
         setLoading(false);
       }
     };

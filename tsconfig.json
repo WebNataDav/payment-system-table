@@ -14,8 +14,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true, 
+    // "allowImportingTsExtensions": true,
+    // "emitDeclarationOnly": true, 
     "types": ["vite/client"]
   },
   "include": ["src"],
