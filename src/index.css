@@ -36,17 +36,7 @@ p {
 
 
 :root {
-  --primary-main: #263353;
-  --primary-light: #fff;
   --primary-dark: #000000;
-  --secondary-main: #f9fafc;
-  --text-primary: #000000de;
-  --text-secondary: #a0a7b6;
   --background-main: #ffffff;
-  --border-light: #c7d1d7;
-  --icon-main: #90a4ae;
-  --icon-secondary: #443e3e1f;
-  --disabled: #bdbdbdff;
-  --border-radius-base: 8px;
 }
 
